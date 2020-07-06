@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test: CurrencyConverter should render correctly 1`] = `
+<form
+  className=" currency-converter"
+  onSubmit={[Function]}
+>
+  <CurrencySelect
+    activeCurrency="EUR"
+    className="currency-converter__currency-select"
+    mode="original"
+    onChange={[Function]}
+  />
+  <NumberInput
+    className=""
+    label="Количество евро"
+    name="original-currency-amount"
+    onChange={[Function]}
+    required={true}
+    value="4"
+  />
+  <SubmitButton
+    className="currency-converter__submit-button"
+    label="Конвертировать валюту"
+  />
+  <CurrencySelect
+    activeCurrency="EUR"
+    className="currency-converter__currency-select"
+    mode="final"
+    onChange={[Function]}
+  />
+  <span
+    aria-label="Количество евро 4"
+    className="currency-converter__final-currency-amount"
+  >
+    4.00
+  </span>
+</form>
+`;
