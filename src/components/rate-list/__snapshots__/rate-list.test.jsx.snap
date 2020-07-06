@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test: RateList should render correctly 1`] = `
+<ul
+  className=" rate-list"
+>
+  <li
+    className="rate-list__item"
+    key="EUR"
+  >
+    <span
+      aria-label="евро"
+      className="rate-list__currency"
+    >
+      💶
+    </span>
+     = 
+    ?
+     руб
+  </li>
+</ul>
+`;
+
+exports[`snapshot test: RateList should render rate 1`] = `
+<ul
+  className=" rate-list"
+>
+  <li
+    className="rate-list__item"
+    key="EUR"
+  >
+    <span
+      aria-label="евро"
+      className="rate-list__currency"
+    >
+      💶
+    </span>
+     = 
+    4.00
+     руб
+  </li>
+</ul>
+`;

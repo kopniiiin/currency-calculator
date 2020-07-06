@@ -1,0 +1,8 @@
+.rate-list {
+  @include list();
+
+  &__currency {
+    font-size: 32px;
+    vertical-align: middle;
+  }
+}
