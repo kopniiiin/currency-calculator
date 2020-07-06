@@ -1,0 +1,18 @@
+.history {
+  @include list();
+
+  max-height: 264px;
+
+  overflow: auto;
+
+  &__date {
+    font-size: 16px;
+
+    opacity: 0.6;
+  }
+
+  &__currency {
+    font-size: 32px;
+    vertical-align: middle;
+  }
+}

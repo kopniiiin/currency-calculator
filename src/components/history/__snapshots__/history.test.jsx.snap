@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test: History should render correctly 1`] = `
+<ol
+  className=" history"
+>
+  <li
+    className="history__item"
+    key="4"
+  >
+    <time
+      className="history__date"
+      dateTime="2020-04-04"
+    >
+      2020-04-04
+    </time>
+    <br />
+    <span
+      aria-label="евро"
+      className="history__currency"
+    >
+      💶
+    </span>
+     
+    4.00
+     =&gt; 
+    <span
+      aria-label="евро"
+      className="history__currency"
+    >
+      💶
+    </span>
+     
+    4.00
+  </li>
+</ol>
+`;
