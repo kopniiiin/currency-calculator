@@ -1,0 +1,47 @@
+.loader-wrapper {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    z-index: 4;
+  }
+
+  &::before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  &::after {
+    top: 50%;
+    left: 50%;
+
+    font-size: 60px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+
+    transform: translate(-50%, -48%);
+    animation: clock 1s linear infinite;
+  }
+}
+
+@keyframes clock {
+  0%   { content: "🕛"; }
+  8%   { content: "🕐"; }
+  16%  { content: "🕑"; }
+  24%  { content: "🕒"; }
+  32%  { content: "🕓"; }
+  40%  { content: "🕔"; }
+  48%  { content: "🕕"; }
+  56%  { content: "🕖"; }
+  64%  { content: "🕗"; }
+  72%  { content: "🕘"; }
+  80%  { content: "🕙"; }
+  88%  { content: "🕚"; }
+  100% { content: "🕛"; }
+}
