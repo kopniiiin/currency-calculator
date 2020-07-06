@@ -1,0 +1,5 @@
+.submit-button {
+  @include round-button();
+
+  &::before { content: "💸"; }
+}

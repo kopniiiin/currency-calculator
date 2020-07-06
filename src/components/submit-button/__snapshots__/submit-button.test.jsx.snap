@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test: SubmitButton should render correctly 1`] = `
+<button
+  aria-label="button"
+  className=" submit-button"
+  type="submit"
+/>
+`;
