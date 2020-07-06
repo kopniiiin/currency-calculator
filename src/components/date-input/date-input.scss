@@ -1,0 +1,32 @@
+.date-input {
+  @include button();
+
+  display: inline-grid;
+  grid-template-areas: "date calendar";
+  grid-template-columns: 1fr min-content;
+  justify-items: center;
+
+  min-width: 220px;
+  border-radius: 4px;
+  padding: 4px;
+
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+
+  &::before {
+    content: "📆";
+
+    grid-area: calendar;
+  }
+
+  &::-webkit-calendar-picker-indicator {
+    grid-area: calendar;
+
+    margin: 0;
+    padding: 0;
+
+    opacity: 0;
+    cursor: pointer;
+  }
+}
