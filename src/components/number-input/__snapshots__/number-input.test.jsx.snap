@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test: NumberInput should render correctly 1`] = `
+<input
+  aria-label="amount"
+  autoComplete="off"
+  className=" number-input"
+  name="amount"
+  onChange={[Function]}
+  pattern="(0(?=\\\\.)|[1-9])\\\\d*(\\\\.\\\\d{1,2})?"
+  required={false}
+  type="text"
+  value="4"
+/>
+`;
