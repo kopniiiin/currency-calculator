@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test: CurrencyRadioInput should render checked 1`] = `
+<label
+  className=" currency-radio-input currency-radio-input_currency_EUR currency-radio-input_active"
+>
+  <input
+    aria-label="currency"
+    checked={true}
+    className="currency-radio-input__input"
+    name="currency"
+    onChange={[Function]}
+    type="radio"
+    value="EUR"
+  />
+</label>
+`;
+
+exports[`snapshot test: CurrencyRadioInput should render correctly 1`] = `
+<label
+  className=" currency-radio-input currency-radio-input_currency_EUR "
+>
+  <input
+    aria-label="currency"
+    checked={false}
+    className="currency-radio-input__input"
+    name="currency"
+    onChange={[Function]}
+    type="radio"
+    value="EUR"
+  />
+</label>
+`;

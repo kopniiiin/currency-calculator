@@ -1,0 +1,19 @@
+.currency-radio-input {
+  @include round-button();
+
+  &_currency {
+    &_EUR {
+      &::before { content: "💶"; }
+    }
+
+    &_USD {
+      &::before { content: "💵"; }
+    }
+
+    &_JPY {
+      &::before { content: "💴"; }
+    }
+  }
+
+  &__input { @include visually-hidden(); }
+}
