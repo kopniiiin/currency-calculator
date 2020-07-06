@@ -1,0 +1,74 @@
+@mixin visually-hidden {
+  position: absolute;
+
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin button {
+  $background-color: #fafafa;
+
+  border: var(--border);
+
+  background-color: $background-color;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($background-color, 4%);
+  }
+
+  &:active,
+  &_active {
+    background-color: darken($background-color, 10%);
+    box-shadow: var(--shadow-inset);
+  }
+}
+
+@mixin round-button {
+  @include button();
+
+  display: inline-grid;
+  justify-items: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  font-size: 32px;
+
+  &::before { transition: transform 0.4s; }
+
+  &:hover,
+  &:active,
+  &_active {
+    &::before { transform: scale(1.6); }
+  }
+}
+
+@mixin list {
+  border: var(--border);
+  border-radius: 4px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  text-align: center;
+
+  &__item {
+    border-bottom: var(--border);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
