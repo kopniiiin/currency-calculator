@@ -1,0 +1,11 @@
+.currency-select {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 44px);
+  justify-content: space-evenly;
+  gap: 4px;
+
+  border: var(--border);
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  padding: 4px;
+}

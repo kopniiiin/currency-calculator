@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test: CurrencySelect should render in final mode 1`] = `
+<div
+  aria-label="итоговая валюта"
+  className=" currency-select"
+  role="group"
+>
+  <CurrencyRadioInput
+    checked={true}
+    className=""
+    currency="EUR"
+    key="EUR"
+    label="евро"
+    name="final-currency"
+    onChange={[Function]}
+    value="EUR"
+  />
+  <CurrencyRadioInput
+    checked={false}
+    className=""
+    currency="USD"
+    key="USD"
+    label="доллар"
+    name="final-currency"
+    onChange={[Function]}
+    value="USD"
+  />
+  <CurrencyRadioInput
+    checked={false}
+    className=""
+    currency="JPY"
+    key="JPY"
+    label="иена"
+    name="final-currency"
+    onChange={[Function]}
+    value="JPY"
+  />
+</div>
+`;
+
+exports[`snapshot test: CurrencySelect should render in original mode 1`] = `
+<div
+  aria-label="исходная валюта"
+  className=" currency-select"
+  role="group"
+>
+  <CurrencyRadioInput
+    checked={true}
+    className=""
+    currency="EUR"
+    key="EUR"
+    label="евро"
+    name="original-currency"
+    onChange={[Function]}
+    value="EUR"
+  />
+  <CurrencyRadioInput
+    checked={false}
+    className=""
+    currency="USD"
+    key="USD"
+    label="доллар"
+    name="original-currency"
+    onChange={[Function]}
+    value="USD"
+  />
+  <CurrencyRadioInput
+    checked={false}
+    className=""
+    currency="JPY"
+    key="JPY"
+    label="иена"
+    name="original-currency"
+    onChange={[Function]}
+    value="JPY"
+  />
+</div>
+`;
